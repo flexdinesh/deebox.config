@@ -1,0 +1,105 @@
+@import url("./colors.css");
+* {
+  border: none;
+  border-radius: 0;
+  font-family: Iosevka;
+  font-size: 12pt;
+  min-height: 0;
+}
+window#waybar {
+  opacity: 0.9;
+  background-color: @background-darker;
+  color: @foreground;
+  border-bottom: 2px solid @background;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+window#waybar.hidden {
+  opacity: 0.2;
+}
+window#waybar.empty {
+  background-color: transparent;
+}
+window#waybar.solo {
+  /* background-color: #ffffff; */
+}
+#window,
+#workspaces {
+  /* margin: 0 4px; */
+  /* margin: 8px 8px; */
+}
+
+#workspaces button {
+  padding: 0 10px;
+  background-color: @background;
+  color: @foreground;
+}
+#workspaces button:hover {
+  box-shadow: inherit;
+  text-shadow: inherit;
+  background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+#workspaces button.active {
+  background-image: linear-gradient(0deg, @purple, @selection);
+}
+#workspaces button.urgent {
+  background-image: linear-gradient(0deg, @red, @background-darker);
+}
+#taskbar button.active {
+  background-image: linear-gradient(0deg, @selection, @background-darker);
+}
+#clock {
+  /* padding: 0 4px; */
+  /* background: @background; */
+}
+#battery {
+  /* background-color: #ffffff; */
+  /* color: #000000; */
+}
+
+#battery.charging,
+#battery.plugged {
+  color: #ffffff;
+  background-color: #26a65b;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Using steps() instead of linear as a timing function to limit cpu usage */
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+#clock,
+#battery,
+#cpu,
+#memory,
+#disk,
+#temperature,
+#backlight,
+#network,
+#pulseaudio,
+#wireplumber,
+#custom-media,
+#tray,
+#mode,
+#idle_inhibitor,
+#scratchpad,
+#power-profiles-daemon,
+#custom-notifpanel,
+#mpd {
+  opacity: 0.9;
+  padding: 0 8px;
+  /* color: #ffffff; */
+  border-radius: 2px;
+}
