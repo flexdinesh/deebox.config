@@ -1,7 +1,7 @@
 {
     // General Settings
     "layer": "top",
-    "margin-top": 12,
+    "margin-top": 10,
     "margin-bottom": 0,
     "margin-left": 14,
     "margin-right": 14,    
