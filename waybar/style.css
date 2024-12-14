@@ -33,7 +33,7 @@ window#waybar {
   /* background: transparent; */
   /* border-bottom: 0px solid @crust; */
   border: 3px solid @crust;
-  border-radius: 15px;
+  border-radius: 10px;
   background: @mantle;
   transition-property: background-color;
   transition-duration: 0.5s;
@@ -46,11 +46,11 @@ window#waybar {
 #workspaces {
   /* background-color: shade(@base, 0.9); */
   background-color: @base;
-  border: 3px solid @crust;
-  /* border: 2px solid alpha(@crust, 0.3); */
+  /* border: 3px solid @crust; */
+  border: 2px solid alpha(@crust, 0.3);
   margin: 2px 1px 3px 1px;
   padding: 0px 1px;
-  border-radius: 15px;
+  border-radius: 10px;
   border: 0px;
   font-weight: bold;
   font-style: normal;
@@ -62,18 +62,19 @@ window#waybar {
 #workspaces button {
   padding: 0px 5px;
   margin: 4px 3px;
-  border-radius: 15px;
+  border-radius: 8px;
   border: 0px;
   background-color: @surface0;
   transition: all 0.3s ease-in-out;
   opacity: 0.5;
+  color: @text;
 }
 
 #workspaces button.active {
   color: @text;
   background: @surface1;
-  border-radius: 15px;
-  min-width: 40px;
+  border-radius: 10px;
+  min-width: 32px;
   transition: all 0.3s ease-in-out;
   opacity: 1;
 }
@@ -81,7 +82,7 @@ window#waybar {
 #workspaces button:hover {
   color: @text;
   background: @surface1;
-  border-radius: 15px;
+  border-radius: 10px;
   opacity: 1;
 }
 
@@ -128,7 +129,7 @@ window#waybar.empty #window {
   background: @base;
   margin: 3px 15px 3px 0px;
   padding: 0px;
-  border-radius: 15px;
+  border-radius: 10px;
   font-weight: normal;
   font-style: normal;
   /* opacity: 0.8; */
@@ -137,7 +138,7 @@ window#waybar.empty #window {
 
 #taskbar button {
   margin: 0;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0px 5px 0px 5px;
 }
 
@@ -202,7 +203,7 @@ window#waybar.empty #window {
 }
 
 #custom-notifpanel {
-  margin-left: 16px;
+  /* margin-left: 16px; */
   /* margin-right: 0px; */
 }
 
@@ -265,7 +266,7 @@ window#waybar.empty #window {
   background-color: @base;
   font-size: 16px;
   color: @text;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 0px 10px 0px 10px;
   margin: 3px 17px 3px 0px;
   /* opacity: 0.8; */
@@ -310,7 +311,7 @@ window#waybar.empty #window {
   background-color: @sky;
   font-size: 16px;
   color: @base;
-  border-radius: 15px;
+  border-radius: 10px;
   /* padding: 1px 10px 0px 10px; */
   /* margin: 3px 0px 3px 0px; */
   padding: 2px 15px 0px 10px;
@@ -327,7 +328,7 @@ window#waybar.empty #window {
   background-color: @base;
   font-size: 16px;
   color: @text;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 2px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
   /* opacity: 0.8; */
@@ -341,7 +342,7 @@ window#waybar.empty #window {
   background-color: @base;
   font-size: 16px;
   color: @text;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 2px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
   /* opacity: 0.8; */
@@ -360,7 +361,7 @@ window#waybar.empty #window {
   background-color: @base;
   font-size: 16px;
   color: @text;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 2px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
   /* opacity: 0.8; */
@@ -386,7 +387,7 @@ window#waybar.empty #window {
   background-color: @base;
   font-size: 16px;
   color: @text;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 2px 10px 0px 10px;
   margin: 5px 15px 5px 0px;
   /* opacity: 0.8; */
@@ -406,7 +407,7 @@ window#waybar.empty #window {
   background-color: @base;
   font-size: 16px;
   color: @text;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 2px 15px 0px 10px;
   margin: 5px 15px 5px 0px;
   /* opacity: 0.8; */
