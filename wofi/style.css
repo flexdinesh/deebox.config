@@ -25,22 +25,30 @@
 @define-color mantle #181825;
 @define-color crust #11111b;
 
+* {
+  font-family: "NotoSans Nerd Font", "Font Awesome 6 Free", FontAwesome, Roboto,
+    Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
 window {
-  margin: 0pxu
-  border: 1px solid @crust;
+  /* border: 1px solid @crust; */
   background-color: @base;
 }
 
 #input {
-  margin: 5px;
+  margin: 8px 5px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   border: none;
   color: @text;
   background-color: @base;
   border-radius: 8px;
+  box-shadow: 0px 0px 0px 2px @surface0 inset;
 }
 
 #input:focus {
-  box-shadow: 0px 0px 0px 1px @sapphire inset;
+  box-shadow: 0px 0px 0px 2px @sky inset;
 }
 
 #inner-box {
@@ -68,7 +76,17 @@ window {
   color: @text;
 }
 
-#entry:selected {
-  background-color: @surface0;
+#entry {
   border-radius: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+#entry:selected {
+  background-color: @sky;
+  color: @base;
+}
+
+#entry:selected #text {
+  color: @base;
 }

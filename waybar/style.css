@@ -55,7 +55,8 @@ window#waybar {
 #workspaces button.active {
   background: @yellow;
   border-radius: 10px;
-  min-width: 32px;
+  /* min-width: 32px; */
+  padding: 0 12px;
   transition: all 150ms ease-in-out;
   opacity: 1;
 }
