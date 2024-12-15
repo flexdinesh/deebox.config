@@ -1,8 +1,7 @@
 @import url("./colors.css");
 
 * {
-  font-family: "Fira Sans", "Font Awesome 6 Free", FontAwesome, Roboto,
-    Helvetica, Arial, sans-serif;
+  font-family: "FiraCode Nerd Font", Roboto, Helvetica, Arial, sans-serif;
   border: none;
   border-radius: 0px;
   color: @text;
@@ -12,9 +11,9 @@ window#waybar {
   /* background-color: rgba(0, 0, 0, 0.8); */
   /* background: transparent; */
   /* border-bottom: 0px solid @crust; */
-  border: 3px solid @crust;
+  border: 3px solid @base;
   border-radius: 10px;
-  background: @mantle;
+  background: @base;
   transition-property: background-color;
   transition-duration: 150ms;
 }
@@ -28,13 +27,12 @@ window#waybar {
   background-color: @base;
   border: 3px solid @crust;
   /* border: 2px solid alpha(@crust, 0.3); */
-  margin: 2px 1px 3px 1px;
+  margin: 2px 1px 2px 1px;
   padding: 0px 1px;
   border-radius: 10px;
   border: 0px;
   font-weight: bold;
   font-style: normal;
-  /* opacity: 0.8; */
   font-size: 16px;
 }
 
@@ -91,7 +89,6 @@ window#waybar {
 tooltip {
   border-radius: 16px;
   background-color: @base;
-  /* opacity: 0.9; */
   padding: 20px;
   margin: 0px;
 }
@@ -112,7 +109,6 @@ tooltip label {
   color: @text;
   font-size: 16px;
   font-weight: normal;
-  /* opacity: 0.8; */
 }
 
 window#waybar.empty #window {
@@ -125,12 +121,11 @@ window#waybar.empty #window {
 
 #taskbar {
   background: @base;
-  margin: 3px 15px 3px 0px;
+  margin: 3px 10px 3px 0px;
   padding: 0px;
   border-radius: 10px;
   font-weight: normal;
   font-style: normal;
-  /* opacity: 0.8; */
   border: 3px solid @crust;
 }
 
@@ -195,14 +190,12 @@ window#waybar.empty #window {
   margin-right: 16px;
   font-size: 20px;
   font-weight: bold;
-  /* opacity: 0.8; */
-  /* color: @base; */
   color: @text;
 }
 
 #custom-notifpanel {
-  /* margin-left: 16px; */
-  /* margin-right: 0px; */
+  margin-left: 0;
+  margin-right: 20px;
 }
 
 #custom-quicklink1,
@@ -235,18 +228,16 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #idle_inhibitor {
-  margin-right: 15px;
+  margin-right: 10px;
   font-size: 22px;
   font-weight: bold;
-  /* opacity: 0.8; */
   color: @text;
 }
 
 #idle_inhibitor.activated {
-  margin-right: 15px;
+  margin-right: 10px;
   font-size: 20px;
   font-weight: bold;
-  opacity: 0.8;
   color: @red;
 }
 
@@ -254,22 +245,13 @@ window#waybar.empty #window {
  * Custom Modules
  * ----------------------------------------------------- */
 
-#custom-appmenuicon {
-  font-size: 20px;
-  color: @text;
-  margin: 0px 15px 0px 0px;
-}
-
 #custom-appmenu {
   background-color: @base;
-  font-size: 16px;
   color: @text;
+  font-size: 20px;
   border-radius: 10px;
-  padding: 0px 10px 0px 10px;
-  margin: 3px 17px 3px 4px;
-  /* opacity: 0.8; */
-  border: 3px solid @crust;
-  border: 0;
+  padding: 0 14px;
+  margin: 5px 15px 5px 5px;
 }
 
 /* -----------------------------------------------------
@@ -277,11 +259,10 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #custom-exit {
-  margin: 0px 13px 0px 0px;
+  margin: 0px 10px 0px 0px;
   padding: 0px;
   font-size: 20px;
   color: @text;
-  /* opacity: 0.8; */
 }
 
 /* -----------------------------------------------------
@@ -292,8 +273,7 @@ window#waybar.empty #window {
 #memory,
 #cpu,
 #language {
-  margin: 0px;
-  padding: 0px;
+  padding: 2px 0 0 0;
   font-size: 16px;
   color: @text;
 }
@@ -307,16 +287,14 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #clock {
-  background-color: @sky;
+  /* background-color: @sky; */
   font-size: 16px;
-  color: @base;
+  /* color: @base; */
   border-radius: 10px;
   /* padding: 1px 10px 0px 10px; */
   /* margin: 3px 0px 3px 0px; */
-  padding: 2px 15px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  /* opacity: 0.8; */
-  /* border: 3px solid @sapphire; */
+  padding: 2px 10px 0px 10px;
+  margin: 5px 10px 5px 0px;
 }
 
 /* -----------------------------------------------------
@@ -328,9 +306,8 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @text;
   border-radius: 10px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  /* opacity: 0.8; */
+  padding: 2px 15px 0px 10px;
+  margin: 5px 10px 5px 0px;
 }
 
 /* -----------------------------------------------------
@@ -342,9 +319,8 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @text;
   border-radius: 10px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  /* opacity: 0.8; */
+  padding: 2px 15px 0px 10px;
+  margin: 5px 10px 5px 0px;
 }
 
 #pulseaudio.muted {
@@ -357,23 +333,22 @@ window#waybar.empty #window {
  * ----------------------------------------------------- */
 
 #network {
-  background-color: @base;
+  background-color: @red;
   font-size: 16px;
   color: @text;
   border-radius: 10px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  /* opacity: 0.8; */
+  padding: 2px 15px 0px 10px;
+  margin: 5px 10px 5px 0px;
 }
 
 #network.ethernet {
-  background-color: @base;
-  color: @text;
+  background-color: @blue;
+  color: @base;
 }
 
 #network.wifi {
-  background-color: @base;
-  color: @text;
+  background-color: @blue;
+  color: @base;
 }
 
 /* -----------------------------------------------------
@@ -383,13 +358,21 @@ window#waybar.empty #window {
 #bluetooth,
 #bluetooth.on,
 #bluetooth.connected {
-  background-color: @base;
   font-size: 16px;
-  color: @text;
   border-radius: 10px;
-  padding: 2px 10px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  /* opacity: 0.8; */
+  padding: 2px 15px 0px 10px;
+  margin: 5px 10px 5px 0px;
+}
+
+#bluetooth {
+  background-color: @base;
+  color: @text;
+}
+
+#bluetooth.on,
+#bluetooth.connected {
+  background-color: @blue;
+  color: @base;
 }
 
 #bluetooth.off {
@@ -408,8 +391,7 @@ window#waybar.empty #window {
   color: @text;
   border-radius: 10px;
   padding: 2px 15px 0px 10px;
-  margin: 5px 15px 5px 0px;
-  /* opacity: 0.8; */
+  margin: 5px 10px 5px 0px;
 }
 
 #battery.charging,

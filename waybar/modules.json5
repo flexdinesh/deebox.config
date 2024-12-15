@@ -61,26 +61,18 @@
   },
   // Tools
   "custom/tools": {
-    "format": "",
+    "format": " ",
     "tooltip-format": "Tools"
   },
   // Rofi Application Launcher
   "custom/appmenu": {
-    // START APPS LABEL
-    "format": "Apps",
-    // END APPS LABEL
-    "on-click": "sleep 0.2;pkill wofi || wofi --show drun",
-    "tooltip-format": "Open the application launcher"
-  },
-  // Rofi Application Launcher
-  "custom/appmenuicon": {
     "format": "",
-    "on-click": "sleep 0.2;pkill wofi || wofi --show drun",
+    "on-click": "sleep 0.2; pkill wofi || wofi --show drun",
     "tooltip-format": "Open the application launcher"
   },
   // Power Menu
   "custom/exit": {
-    "format": "",
+    "format": "⏻",
     "on-click": "wlogout",
     "tooltip-format": "Power Menu"
   },
@@ -136,21 +128,21 @@
   },
   // System
   "custom/system": {
-    "format": "",
+    "format": " ",
     "tooltip": false
   },
   // CPU
   "cpu": {
-    "format": "/ C {usage}% "
+    "format": " /  {usage}%"
   },
   // Memory
   "memory": {
-    "format": "/ M {}% "
+    "format": " /  {}% "
   },
   // Harddisc space used
   "disk": {
     "interval": 30,
-    "format": "D {percentage_used}% ",
+    "format": " {percentage_used}%",
     "path": "/"
   },
   "hyprland/language": {
@@ -207,12 +199,12 @@
   // Network
   "network": {
     "format": "{ifname}",
-    "format-wifi": "   {signalStrength}%",
+    "format-wifi": "  {signalStrength}%",
     "format-ethernet": "  {ifname}",
     "format-disconnected": "Disconnected",
-    "tooltip-format": " {ifname} via {gwaddri}",
+    "tooltip-format": "  {ifname} via {gwaddri}",
     "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
    // "on-click": "nmtui"
@@ -226,9 +218,9 @@
     },
     "format": "{icon} {capacity}%",
     "format-full": "{icon} {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": "  {capacity}%",
-    "format-alt": "{icon}  {time}",
+    "format-charging": "󰚥 {capacity}%",
+    "format-plugged": "󰚥 {capacity}%",
+    "format-alt": "{icon} {time}",
     // "format-time": "{H}h{M}m",
     // "interval": 30,
     // "format-good": "", // An empty format will hide the module
@@ -244,7 +236,7 @@
   // Pulseaudio
   "pulseaudio": {
     // "scroll-step": 1, // %, can be a float
-    "format": "{icon}  {volume}%",
+    "format": "{icon} {volume}%",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": " {icon} {format_source}",
     "format-muted": " {format_source}",
@@ -259,8 +251,8 @@
       "car": " ",
       "default": [
         "",
-        "",
-        ""
+        " ",
+        " "
       ]
     },
     "on-click": "pavucontrol"
@@ -282,7 +274,7 @@
   },
   // backlight:
   "backlight": {
-    "format": "{icon}  {percent}%",
+    "format": "{icon} {percent}%",
     "format-icons": [
       "",
       "",
