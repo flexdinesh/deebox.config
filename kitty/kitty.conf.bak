@@ -2470,7 +2470,7 @@ modify_font cell_height 150%
 
 
 # BEGIN_KITTY_THEME
-# Catppuccin-Mocha
+# GitHub Dark Colorblind
 include current-theme.conf
 # END_KITTY_THEME
 
