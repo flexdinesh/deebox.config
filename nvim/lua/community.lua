@@ -11,8 +11,8 @@ return {
   -- example of importing a plugin
   -- available plugins can be found at https://github.com/AstroNvim/astrocommunity
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
-  -- { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
-  -- { import = "astrocommunity.bars-and-lines.statuscol-nvim" },
+  { import = "astrocommunity.bars-and-lines.bufferline-nvim" },
+  { import = "astrocommunity.bars-and-lines.statuscol-nvim" },
   { import = "astrocommunity.color.vim-highlighter" },
   { import = "astrocommunity.colorscheme.catppuccin" },
   -- { import = "astrocommunity.colorscheme.dracula-nvim" },
