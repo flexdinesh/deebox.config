@@ -345,7 +345,7 @@ window#waybar.empty #window {
 }
 
 #network.wifi {
-  background-color: @blue;
+  background-color: @mauve;
   color: @base;
 }
 
