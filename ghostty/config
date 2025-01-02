@@ -1,0 +1,12 @@
+## Window
+window-decoration = false
+
+## Theme
+# theme = tokyonight
+theme = catppuccin-mocha
+font-family = JetBrainsMono Nerd Font
+# font-family = FiraCode Nerd Font
+font-size = 13
+
+adjust-cell-width = 0
+adjust-cell-height = 50%

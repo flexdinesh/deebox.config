@@ -4,6 +4,7 @@
 
 # selectively include the directories that need to be on git
 !kitty
+!ghostty
 !nvim
 !hypr
 !waybar
