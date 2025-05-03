@@ -11,7 +11,7 @@
     "on-scroll-up": "hyprctl dispatch workspace r-1",
     "on-scroll-down": "hyprctl dispatch workspace r+1",
     "on-click": "activate",
-    "active-only": false,
+    "active-only": true,
     "all-outputs": true,
     "format": "{}",
     "format-icons": {
@@ -19,9 +19,9 @@
       "active": "",
       "default": ""
     },
-    "persistent-workspaces": {
-      "*": 5
-    }
+    // "persistent-workspaces": {
+    //   "*": 5
+    // }
   },
   // Taskbar
   "wlr/taskbar": {
